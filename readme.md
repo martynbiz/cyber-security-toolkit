@@ -1,4 +1,4 @@
-# Cyber security toolkit
+# Cyber Security Toolkit
 
 This is a guide to pen testing networks, systems and applications (e.g. websites). 
 
