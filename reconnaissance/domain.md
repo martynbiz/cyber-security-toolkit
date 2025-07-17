@@ -1,4 +1,6 @@
-# WHOIS Lookup
+# Domain
+
+## WHOIS Lookup
 
 Use WHOIS services to gather information about the domain registration, including the owner's contact details, registration date, and hosting provider.
 
@@ -6,7 +8,7 @@ Use WHOIS services to gather information about the domain registration, includin
 whois example.com > example_com__whois.txt
 ```
 
-# DNS Enumeration
+## DNS Enumeration
 
 Tools like dig or nslookup can help you gather DNS records, including A, MX, and TXT records, which can provide insights into the infrastructure.
 
@@ -38,9 +40,13 @@ dnsenum --noreverse -o example.xml example.com
 
 ## DNSRecon
 
+Enumerate DNS records
+
 ```
 dnsrecon -d example.com
 ```
+
+TXT records will show any protective services such as SPF mail.
 
 ## Host
 
@@ -65,3 +71,61 @@ nslookup
 > set type=mx
 > example.com
 ```
+
+## Trace route
+
+```
+traceroute example.com
+```
+
+## Wafw00f
+
+```
+wafw00f example.com
+```
+
+Get registrar, domain expiry date, DNSSec enabled, 
+
+## Dig
+
+DNS lookup utility
+
+```
+dig example.com
+```
+
+Limit to nameservers only
+
+```
+dig example.com NS
+```
+
+## Fierce
+
+Performs zone transfer?
+
+```
+fierce --domain example.com
+```
+
+## Knockpy
+
+Perform subdomain brute force
+
+```
+knockpy example.com
+```
+
+```
+knockpy example.com -w custom_wordlist.txt
+```
+
+
+
+TODO
+- netcraft website - ssl info, ca, heartbleed vuln, dmark? dkim? 
+- dnsdumpster.com - mapping of domain, graphs, openssh version
+- SecurityTrails
+- https://zonetransfer.me - for training purposes
+- historical DNS
+- bypass Cloudflare IP protection?
