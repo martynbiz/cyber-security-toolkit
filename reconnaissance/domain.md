@@ -120,6 +120,11 @@ knockpy example.com
 knockpy example.com -w custom_wordlist.txt
 ```
 
+IP Info
+
+```
+https://ipinfo.io/2.2.2.2/json
+```
 
 
 TODO
@@ -129,3 +134,56 @@ TODO
 - https://zonetransfer.me - for training purposes
 - historical DNS
 - bypass Cloudflare IP protection?
+
+## Cloudflare
+
+Finding the real IP address of a website implies getting to the actual web server’s IP address, even if the origin server is being hidden by a CDN like Cloudflare. Finding the real IP address of a website is difficult when the user is using Cloudlfare as the requests by visitors are routed through the CDN’s global network, hiding the real IP address.
+
+### Cloudsnare
+
+Note: seems you need to pay for API
+
+Step 1: Create the Account on Censys.io
+
+Go to censys.io and sign up for a free account.
+
+Step 2: Generating API and Secret Key.
+
+Go to your Censys account profile by clicking on "My Account"
+
+https://www.geeksforgeeks.org/linux-unix/find-real-ip-behind-cloudflare-with-cloudsnare/
+
+### CloudPeter
+
+Not working :(
+
+```
+git clone https://github.com/zidansec/CloudPeler
+cd CloudPeter
+./crimeflare example.com
+```
+
+### OsintSec
+
+Not working :(
+
+Simple tools for further penetration, this tool is able to visualize network from Domain, IP, Email and more.
+
+https://osinthreat.herokuapp.com/
+
+
+
+https://github.com/christophetd/CloudFlair?tab=readme-ov-file
+
+
+A variety of free and premium tools such as SecurityTrails, DNS Spy, and other tools offer detailed DNS record history and analytical capabilities useful for domain owners, IT professionals, and security experts.
+
+SecurityTrails DNS Check – Check Historial DNS Data
+
+DNS Trails (now SecurityTrails)
+
+DNS Spy
+https://dnsspy.io/scan
+
+WhoISrequest
+Whoxy

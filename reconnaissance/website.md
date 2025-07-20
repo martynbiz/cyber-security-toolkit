@@ -2,6 +2,10 @@
 
 Use tools like Wappalyzer or BuiltWith to identify the technologies used on the website, including the WordPress version, plugins, and themes.
 
+## Source Code Inspection
+
+View the page source in your browser to identify comments, hidden fields, or other information that may reveal vulnerabilities.
+
 ## BuiltWith
 
 Can be accessed via a browser, or Chrome/Firefox plugin.
@@ -86,3 +90,9 @@ Use tools like DirBuster or Gobuster to discover hidden directories and files th
 Search for Sensitive Files
 
 Look for common sensitive files like wp-config.php, .htaccess, or backup files that may be exposed.
+
+### Gobuster
+
+```
+gobuster dir --url http://10.10.10.48/ --wordlist /usr/share/wordlists/dirb/big.txt
+```
