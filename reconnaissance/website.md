@@ -96,3 +96,23 @@ Look for common sensitive files like wp-config.php, .htaccess, or backup files t
 ```
 gobuster dir --url http://10.10.10.48/ --wordlist /usr/share/wordlists/dirb/big.txt
 ```
+
+```
+gobuster dir --url http://planning.htb/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+```
+
+## FFUF
+
+ffuf is a fast web fuzzer written in Go that allows typical directory discovery, virtual host discovery (without DNS records) and GET and POST parameter fuzzing.
+
+Subdirectories
+
+```
+ffuf -w Seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt -u http://{TARGET_IP}/FUZZ.php -ac -v
+```
+
+Subdomains
+
+```
+ffuf -w Seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -H "Host: FUZZ.planning.htb" -u http://{TARGET_IP} -ac -v
+```
