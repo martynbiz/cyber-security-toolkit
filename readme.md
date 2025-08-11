@@ -8,10 +8,32 @@ Ethical Disclaimer: This guide is intended for educational purposes only. Penetr
 
 https://book.hacktricks.wiki/en/pentesting-web/ssti-server-side-template-injection/index.html
 
+General tools
 
+Docker for local target environments
+Code-oss - open source VS Code
+
+Sonarqube
+https://0xnehru.medium.com/step-by-step-guide-to-installing-and-setting-up-sonarqube-on-kali-linux-a73fd793e9b8
 
 creating a virtual target:
 
 https://www.osboxes.org/virtualbox-images/
 https://virtualboxes.org/images/
 https://wordpress.org/download/releases/
+
+
+https://analyticsindiamag.com/ai-features/hacks-and-tech-used-in-rami-maleks-mr-robot-are-mind-blowingly-realistic/
+
+
+
+
+other tools:
+
+Pwnix or pwn phone
+
+keystroke inj
+https://medium.com/@redfanatic7/detailed-mimikatz-guide-87176fd526c0
+https://shop.hak5.org/products/usb-rubber-ducky
+
+https://medium.com/@okanyildiz1994/mastering-red-teaming-an-exhaustive-guide-to-adversarial-simulation-in-cybersecurity-6cb701c1c860

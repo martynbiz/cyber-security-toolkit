@@ -103,12 +103,18 @@ gobuster dir --url http://planning.htb/ --wordlist /usr/share/wordlists/dirbuste
 
 ## FFUF
 
-ffuf is a fast web fuzzer written in Go that allows typical directory discovery, virtual host discovery (without DNS records) and GET and POST parameter fuzzing.
+Tools such as `ffuf` provide us with a handy automated way to fuzz the web application's individual components or a web page. This means, for example, that we use a list that is used to send requests to the webserver if the page with the name from our list exists on the webserver. If we get a response code 200, then we know that this page exists on the webserver, and we can look at it manually.
 
 Subdirectories
 
 ```
 ffuf -w Seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt -u http://{TARGET_IP}/FUZZ.php -ac -v
+```
+
+with recursion
+
+```
+ffuf -w /opt/useful/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ -recursion -recursion-depth 1 -e .php -v
 ```
 
 Subdomains
