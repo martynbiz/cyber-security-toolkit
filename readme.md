@@ -37,3 +37,7 @@ https://medium.com/@redfanatic7/detailed-mimikatz-guide-87176fd526c0
 https://shop.hak5.org/products/usb-rubber-ducky
 
 https://medium.com/@okanyildiz1994/mastering-red-teaming-an-exhaustive-guide-to-adversarial-simulation-in-cybersecurity-6cb701c1c860
+
+
+TODO
+- wordpress and wpscan files exist
